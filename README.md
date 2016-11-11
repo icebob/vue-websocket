@@ -7,6 +7,17 @@ Register the plugin
 import VueWebsocket from "vue-websocket";
 Vue.use(VueWebsocket);
 ```
+or connect to other address:
+```js
+Vue.use(VueWebsocket, "http://otherserver:8080");
+```
+You can pass options too:
+```js
+Vue.use(VueWebsocket, "http://otherserver:8080", {
+	reconnection: false
+});
+```
+
 
 Use it in your components:
 ```html
