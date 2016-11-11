@@ -39,6 +39,20 @@ Use it in your components:
 				changed(msg) {
 					console.log("Something changed: " + msg);
 				}
+				
+				/*
+				connect() {
+					console.log("Websocket connected to " + this.$socket.nsp);
+				},
+
+				disconnect() {
+					console.log("Websocket disconnected from " + this.$socket.nsp);
+				},
+
+				error(err) {
+					console.error("Websocket error!", err);
+				}
+				*/
 
 			}
 		}
