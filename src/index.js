@@ -1,4 +1,3 @@
-import Vue from "vue";
 import IO from "socket.io-client";
 
 export default {
@@ -16,7 +15,7 @@ export default {
 
 		let addListeners = function() {
 			if (this.$options.hasOwnProperty("socket")) {
-				var conf = this.$options.socket;
+				let conf = this.$options.socket;
 				if (conf.namespace) {					
 					this.$socket = IO(conf.namespace, conf.options);
 				}
@@ -30,11 +29,11 @@ export default {
 					});
 				}
 			}
-		}
+		};
 
 		let removeListeners = function() {
 			if (this.$options.hasOwnProperty("socket")) {
-				var conf = this.$options.socket;
+				let conf = this.$options.socket;
 
 				if (conf.namespace) {
 					this.$socket.disconnect();
@@ -47,7 +46,7 @@ export default {
 					});
 				}
 			}
-		}
+		};
 
 		Vue.mixin({
 			beforeCompile: addListeners,
@@ -56,4 +55,4 @@ export default {
 
 	}
 
-}
+};
