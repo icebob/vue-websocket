@@ -1,8 +1,6 @@
 # vue-websocket [![NPM version](https://img.shields.io/npm/v/vue-websocket.svg)](https://www.npmjs.com/package/vue-websocket)
 Websocket plugin for VueJS. Support namespaces.
 
-[![NPMS.io score](https://badges.npms.io/vue-websocket.svg)]()
-
 
 ## Install
 ### NPM
