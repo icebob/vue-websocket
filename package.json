@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Websocket handler for Vue.js",
   "homepage": "https://github.com/icebob/vue-websocket",
-  "main": "src/index.js",
+  "main": "dist/vue-websocket.js",
   "scripts": {
     "_prebuild": "npm run test",
     "build": "webpack --progress --config webpack.build.config.js",
