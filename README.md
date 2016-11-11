@@ -1,5 +1,5 @@
 # vue-websocket
-Websocket handler for VueJS. Support namespaces.
+Websocket plugin for VueJS. Support namespaces.
 
 ## Usage
 Register the plugin
