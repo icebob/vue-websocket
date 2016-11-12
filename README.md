@@ -1,5 +1,5 @@
 # vue-websocket [![NPM version](https://img.shields.io/npm/v/vue-websocket.svg)](https://www.npmjs.com/package/vue-websocket)
-Websocket plugin for VueJS. Support namespaces.
+Websocket (socket.io) plugin for VueJS. Support namespaces.
 
 
 ## Install
@@ -22,11 +22,11 @@ Vue.use(VueWebsocket);
 ```
 or connect to other address:
 ```js
-Vue.use(VueWebsocket, "http://otherserver:8080");
+Vue.use(VueWebsocket, "ws://otherserver:8080");
 ```
 You can pass options too:
 ```js
-Vue.use(VueWebsocket, "http://otherserver:8080", {
+Vue.use(VueWebsocket, "ws://otherserver:8080", {
 	reconnection: false
 });
 ```
