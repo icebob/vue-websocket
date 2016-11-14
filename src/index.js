@@ -49,7 +49,13 @@ export default {
 		};
 
 		Vue.mixin({
-			created: addListeners,
+			// Vue v1.x
+			beforeCompile: addListeners,
+			
+			// Vue v2.x
+			beforeCreate: addListeners,
+
+
 			beforeDestroy: removeListeners
 		});
 
