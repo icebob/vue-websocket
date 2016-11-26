@@ -89,7 +89,7 @@ npm test
 Please send pull requests improving the usage and fixing bugs, improving documentation and providing better examples, or providing some testing, because these things are important.
 
 ## License
-vue-touch-keyboard is available under the [MIT license](https://tldrlegal.com/license/mit-license).
+vue-websocket is available under the [MIT license](https://tldrlegal.com/license/mit-license).
 
 ## Contact
 
