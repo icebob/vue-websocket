@@ -1,6 +1,6 @@
 {
   "name": "vue-websocket",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Websocket handler for Vue.js",
   "homepage": "https://github.com/icebob/vue-websocket",
   "main": "dist/vue-websocket.js",

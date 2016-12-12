@@ -14,7 +14,7 @@ export default {
 		Vue.prototype.$socket = socket;
 
 		let addListeners = function() {
-			if (this.$options.hasOwnProperty("socket")) {
+			if (this.$options["socket"]) {
 				let conf = this.$options.socket;
 				if (conf.namespace) {					
 					this.$socket = IO(conf.namespace, conf.options);
@@ -32,7 +32,7 @@ export default {
 		};
 
 		let removeListeners = function() {
-			if (this.$options.hasOwnProperty("socket")) {
+			if (this.$options["socket"]) {
 				let conf = this.$options.socket;
 
 				if (conf.namespace) {
