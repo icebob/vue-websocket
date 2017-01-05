@@ -6,7 +6,7 @@ export default {
 
 		let socket;
 
-		if (typeof connection === "object")
+		if (connection != null && typeof connection === "object")
 			socket = connection;
 		else
 			socket = IO(connection || "", opts);
