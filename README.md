@@ -6,37 +6,43 @@ A [socket.io](https://socket.io) plugin for Vue.js.
 
 > **This package does not support native websockets**. At the time, we recommend using [vue-native-websocket](https://github.com/nathantsoi/vue-native-websocket) or [implementing it yourself](https://alligator.io/vuejs/vue-socketio/). For ongoing discussion on this, please visit [#2](https://github.com/icebob/vue-websocket/issues/2).
 
-## Install
-### NPM
-You can install it via [NPM](http://npmjs.org/).
-```
-$ npm install vue-websocket
-```
-### Manual
-Download zip package and unpack and add the `vue-websocket.js` file to your project from dist folder.
-```
-https://github.com/icebob/vue-websocket/archive/master.zip
+## Installation
+You can either install this package with `npm`, or manually by downloading the zip file.
+
+### npm
+
+```bash
+$ npm install -S vue-websocket
 ```
 
+### Manual
+1. Download the latest zip file from [here](https://github.com/icebob/vue-websocket/archive/master.zip).
+2. Unzip the file and add the `dist/vue-websocket.js` file to your project.
+
 ## Usage
-Register the plugin, it will connect to `/`
+Register the plugin. By default, it will connect to `/`:
+
 ```js
 import VueWebsocket from "vue-websocket";
 Vue.use(VueWebsocket);
 ```
-or connect to other address:
+
+Or to connect to another address:
+
 ```js
 Vue.use(VueWebsocket, "ws://otherserver:8080");
 ```
-You can pass options too:
+
+You can also pass options:
+
 ```js
 Vue.use(VueWebsocket, "ws://otherserver:8080", {
 	reconnection: false
 });
 ```
 
+To use it in your components:
 
-Use it in your components:
 ```html
 <script>
 	export default {
@@ -91,25 +97,30 @@ Use it in your components:
 </script>
 ```
 
-## Build
-This command will build a distributable version in the `dist` directory.
+## Develop
+
+### Building
+This command will build a distributable version in the `dist` directory:
+
 ```bash
-npm run build
+$ npm run build
 ```
 
-## Test
+## Testing
+This package uses [`karma`](https://www.npmjs.com/package/karma) for testing. You can run the tests like so:
+
 ```bash
-npm test
+$ npm test
 ```
 
 ## Contribution
 Please send pull requests improving the usage and fixing bugs, improving documentation and providing better examples, or providing some testing, because these things are important.
 
 ## License
-vue-websocket is available under the [MIT license](https://tldrlegal.com/license/mit-license).
+`vue-websocket` is available under the [MIT license](https://tldrlegal.com/license/mit-license).
 
 ## Contact
 
-Copyright (C) 2016 Icebob
+Copyright © 2018 Icebob
 
 [![@icebob](https://img.shields.io/badge/github-icebob-green.svg)](https://github.com/icebob) [![@icebob](https://img.shields.io/badge/twitter-Icebobcsi-blue.svg)](https://twitter.com/Icebobcsi)
