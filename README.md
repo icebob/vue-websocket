@@ -7,7 +7,7 @@ A [socket.io](https://socket.io) plugin for Vue.js.
 > **This package does not support native websockets**. At the time, we recommend using [vue-native-websocket](https://github.com/nathantsoi/vue-native-websocket) or [implementing it yourself](https://alligator.io/vuejs/vue-socketio/). For ongoing discussion on this, please visit [#2](https://github.com/icebob/vue-websocket/issues/2).
 
 ## Installation
-You can either install this package with `npm`, or manually by downloading the zip file.
+You can either install this package with `npm`, or manually by downloading the primary plugin file.
 
 ### npm
 
@@ -16,8 +16,7 @@ $ npm install -S vue-websocket
 ```
 
 ### Manual
-1. Download the latest zip file from [here](https://github.com/icebob/vue-websocket/archive/master.zip).
-2. Unzip the file and add the `dist/vue-websocket.js` file to your project.
+Download the production [`vue-websocket.js`](https://raw.githubusercontent.com/icebob/vue-websocket/master/dist/vue-websocket.js) file. This link is a mirror of the same file found in the `dist` directory of this project.
 
 ## Usage
 Register the plugin. By default, it will connect to `/`:
