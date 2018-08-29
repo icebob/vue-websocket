@@ -2,8 +2,9 @@
 ![VueJS v1.x compatible](https://img.shields.io/badge/vue%201.x-compatible-green.svg)
 ![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)
 
-Websocket (socket.io) plugin for VueJS. Support namespaces.
+A [socket.io](https://socket.io) plugin for Vue.js.
 
+> **This package does not support native websockets**. At the time, we recommend using [vue-native-websocket](https://github.com/nathantsoi/vue-native-websocket) or [implementing it yourself](https://alligator.io/vuejs/vue-socketio/). For ongoing discussion on this, please visit [#2](https://github.com/icebob/vue-websocket/issues/2).
 
 ## Install
 ### NPM
@@ -39,24 +40,24 @@ Use it in your components:
 ```html
 <script>
 	export default {
-		
+
 		methods: {
 			add() {
 		  		// Emit the server side
-		  		this.$socket.emit("add", { a: 5, b: 3 });    
+		  		this.$socket.emit("add", { a: 5, b: 3 });
 			},
-			
+
 			get() {
 		  		this.$socket.emit("get", { id: 12 }, (response) => {
 					...
-				});    
+				});
 			}
 		},
 
 		socket: {
 			// Prefix for event names
 			// prefix: "/counter/",
-			
+
 			// If you set `namespace`, it will create a new socket connection to the namespace instead of `/`
 			// namespace: "/counter",
 
@@ -68,7 +69,7 @@ Use it in your components:
 				changed(msg) {
 					console.log("Something changed: " + msg);
 				}
-				
+
 				/* common socket.io events
 				connect() {
 					console.log("Websocket connected to " + this.$socket.nsp);
