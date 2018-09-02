@@ -16,7 +16,7 @@ export default {
 		let addListeners = function() {
 			if (this.$options["socket"]) {
 				let conf = this.$options.socket;
-				if (conf.namespace) {					
+				if (conf.namespace) {
 					this.$socket = IO(conf.namespace, conf.options);
 				}
 
@@ -49,7 +49,7 @@ export default {
 		};
 
 		Vue.mixin({
-			[Vue.version.indexOf('2') === 0 ? 'beforeCreate' : 'beforeCompile']: addListeners,
+			[Vue.version.indexOf("2") === 0 ? "beforeCreate" : "beforeCompile"]: addListeners,
 			beforeDestroy: removeListeners
 		});
 
